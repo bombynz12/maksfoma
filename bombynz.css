@@ -1,0 +1,104 @@
+body {
+   font: 14px Arial, Helvetica, sans-serif; /* Рубленый шрифт текста */
+   margin: 0; /* Отступы на странице */
+  }
+  h1 {
+   font-size: 36px; /* Размер шрифта заголовка шапки */
+   margin: 0; /* Убираем отступы */
+   color: #fc6; /* Цвет текста заголовка шапки */
+  }
+  h2 {
+   margin-top: 0; /* Убираем отступ сверху */
+  }
+  .header {
+   background: #0080c0; /* Цвет фона шапки */
+   padding: 10px; /* Поля вокруг текста */
+  }
+  .sidebar {
+   float: right; /* Обтекание справа */
+   border: 1px solid #333; /* Рамка левого меню */
+   width: 20%; /* Ширина левой колонки */
+   padding: 5px; /* Поля внутри блока */
+   margin: 10px 10px 20px 5px; /* Значения отступа от блока */
+  }
+  .content1 {
+   margin: 10px 25% 20px 5px; /* Значения отступа от правого блока */
+   padding: 5px; /* Поля внутри блока */
+   border: 1px solid #333; /* Рамка контента */
+  }
+  .footer {
+   background: #333; /* Цвет фона подвал (футера) */
+   padding: 5px; /* Поля внутри блока */
+   color: #fff; /* Цвет текста футера */
+   clear: left; /* Отменяем действие float */
+  }
+  * {
+  margin: 0;
+  padding: 0;
+}
+.content {
+  min-height: calc(100vh - 80px);
+}
+.maks {
+ float:right;
+ width:300px;
+ height:600px;
+ margin-right: 30px;
+ border:10px solid blue;
+ border-radius: 50%;
+}
+.maks1 {
+ float:right;
+ width:300px;
+ height:600px;
+ margin-right: 30px;
+ border:10px solid red;
+ border-radius: 50%;
+}
+#gall {
+  position: relative;
+  padding-top: 50%;
+  -moz-user-select: none; user-select: none;
+  margin-top: 10px;
+}
+#gall img {
+  position: absolute;
+  top: 25%;
+  left: 12.5%;
+  max-width: 24.5%;
+  max-height: 49.5%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  cursor: zoom-in;
+  transition: .2s;
+}
+#gall img:nth-child(4n-2) {left: 37.5%;}
+#gall img:nth-child(4n-1) {left: 62.5%;}
+#gall img:nth-child(4n) {left: 87.5%;}
+#gall img:nth-child(n+5) {top: 75%;}
+
+#gall img:focus {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+  max-width: 100%;
+  max-height: 100%;
+  outline: none;
+  pointer-events: none;
+}
+#gall img:focus ~ div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #fff;
+  cursor: zoom-out;
+}
+
+.info1 {
+  vertical-align: 75px;
+  text-align: center;
+  font-size: 26px;
+}
